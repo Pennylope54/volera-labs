@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Volera Labs</title>
+
+<!-- Luxury Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    background: #07070b;
+    color: #f5f5f5;
+    font-family: "Inter", sans-serif;
+  }
+
+  /* TOP BAR */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .nav a {
+    color: #aaa;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .nav a:hover {
+    color: gold;
+  }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: radial-gradient(circle at top, #1a1a2e, #07070b);
+  }
+
+  .hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    margin: 0;
+    letter-spacing: 4px;
+  }
+
+  .hero p {
+    color: #bbb;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, gold, #c9a227);
+    color: black;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+
+  section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    color: gold;
+    letter-spacing: 2px;
+  }
+
+  /* GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  /* LUXURY CARD */
+  .card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: gold;
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 18px;
+  }
+
+  .price {
+    color: gold;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .small {
+    color: #aaa;
+    font-size: 13px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px;
+    color: #555;
+    font-size: 12px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">VOLERA LABS</div>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#store">Store</a>
+    <a href="#products">Products</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Luxury Digital Creation</h1>
+  <p>We design brands, digital products, and content systems that sell.</p>
+  <a class="btn" href="#store">Enter Store</a>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1558655146-d09347e92766" />
+      <div class="card-content">
+        <h3>Brand Identity</h3>
+        <p class="small">Luxury logos, brand systems, color palettes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1557682250-33bd709cbe85" />
+      <div class="card-content">
+        <h3>Digital Content</h3>
+        <p class="small">Social media posts, ads, marketing visuals.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72" />
+      <div class="card-content">
+        <h3>AI Products</h3>
+        <p class="small">Templates, ebooks, prompts, automation tools.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STORE -->
+<section id="store">
+  <h2>Digital Store</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" />
+      <div class="card-content">
+        <h3>Brand Starter Kit</h3>
+        <p class="small">Logo + fonts + color system</p>
+        <div class="price">$19</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d" />
+      <div class="card-content">
+        <h3>Content Pack</h3>
+        <p class="small">30 viral social media templates</p>
+        <div class="price">$17</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" />
+      <div class="card-content">
+        <h3>AI Business Kit</h3>
+        <p class="small">Prompts + workflows + strategy</p>
+        <div class="price">$27</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCT PAGE -->
+<section id="products">
+  <h2>Featured Product</h2>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" />
+    <div class="card-content">
+      <h3>Volera Launch System</h3>
+      <p class="small">
+        Full system to build, launch, and sell digital products online.
+      </p>
+      <div class="price">$47</div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Volera Labs • Digital Studio & Brand House
+</footer>
+
+</body>
+</html>
